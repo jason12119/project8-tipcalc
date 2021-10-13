@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="dist/css/frameworks.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="dist/js/frameworks.js"></script>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid paddingTB80">
+      <div class="container">
+        <div class="main-wrapper">
+          <h1>
+            Spli
+            <br />
+            tter
+          </h1>
+          <div id="calculator">
+            <div id="controls">
+              <div class="group">
+                <h2>Bill</h2>
+                <input id="bill" class="input" type="text" value="0" />
+              </div>
+              <div class="group">
+                <h2>Select Tip %</h2>
+                <div class="buttons">
+                  <div class="button">5%</div>
+                  <div class="button">10%</div>
+                  <div class="button">15%</div>
+                  <div class="button">25%</div>
+                  <div class="button">50%</div>
+                  <input
+                    id="custom"
+                    type="text"
+                    class="input"
+                    placeholder="Custom"
+                  />
+                </div>
+              </div>
+              <div class="group">
+                <h2>Number of People</h2>
+                <input id="people" type="text" class="input" value="0" />
+              </div>
+            </div>
+            <div id="display">
+              <div class="group">
+                <div class="row">
+                  <h2>Tip Amount</h2>
+                  <div class="numeral">
+                    <span>$</span>
+                    <span id="tipAmount">0.00</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <h2>Total</h2>
+                  <div class="numeral">
+                    <span>$</span>
+                    <span id="total">0.00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="group">
+                <div id="reset" class="button">reset</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor
+      </a>
+      . Coded by
+      <a href="http://www.jason12119.eu">
+        Jason12119 aka Pedro aka Confessions of a Coding Freak
+      </a>
+      .
+    </div>
+    <script src="js/functions.js"></script>
+  </body>
+</html>
